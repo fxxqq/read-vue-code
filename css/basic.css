@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,textarea,p,th,td{margin:0;padding:0}
+body{background:url(background.gif);font-family:MicroSoft YaHei,Helvetica,Arial,Verdana,Geneva,sans-serif;color:#333;font-size:12px;}
+table{border-collapse:collapse;border-spacing:0;font-size:inherit}
+h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:bold;}
+input,textarea,select{font-family:inherit;font-size:inherit;outline: none;font-weight:inherit}
+fieldset,img{border:0;vertical-align: middle;}
+li{list-style:none}
+a{text-decoration:none;cursor: pointer;}
+.wrap{margin:0 auto;width:1200px;min-width:1000px;}
+.mtop{margin-top:10px;}
+.left{float:left;}
+.right{float:right;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+
+/*首页幻灯片*/
+#banner{position:relative;width: 100%;background: #000;overflow: hidden;text-align: center; }
+#banner ul {width: 300%;}
+#banner ul li{display: block;float: left;width: 33%;min-height: 200px;-o-background-size: 100% 100%;-ms-background-size: 100% 100%;-moz-background-size: 100% 100%;-webkit-background-size: 100% 100%;background-size: 100% 100%;box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);overflow:hidden;}
+#banner .dots {margin:0;padding:0;position: absolute;left: 0;right: 0;bottom: 20px;width: 100%;}
+#banner .dots li {display: inline-block;*display: inline;zoom: 1;width: 15px;height: 15px;line-height: 15px;margin: 0 4px;text-indent: -999em;*text-indent: 0;border: 2px solid #fff;border-radius: 6px;cursor: pointer;opacity: .4;background:#fff;-webkit-transition: background .5s, opacity .5s;-moz-transition: background .5s, opacity .5s;transition: background .5s, opacity .5s;}
+#banner .dots li.active {background: #f50;color:#f50;opacity: 1;}
+
+
+
+#nav-plane{position:fixed;top:150px;left:0;background:url(step.png) repeat-y;z-index:999;}
+#nav-plane ul{margin-bottom:-3px;}
+#nav-plane li{margin-bottom:3px;text-align:center;-webkit-box-shadow: 0 0 5px #555;  -moz-box-shadow: 0 0 5px #555;box-shadow:0 0 5px #555; }
+#nav-plane li a{display:inline-block;line-height:30px;width:75px;border:1px solid #e3e3e3;color:#555;background:#fff;}
+#nav-plane li a:hover{background:#f8f8f8;color:#47b902;}
+#nav-plane li.active a{background:#47b902;color:#fff;}
+
+#shortcut-box{position:fixed;z-index:200;right:10px;bottom:60px;width:45px;_position:absolute;_bottom:auto}
+#shortcut-box a{display:block;margin-top:1px;height:44px;width:45px;background:url(sprite-new.png) 0 0;cursor:pointer}
+#shortcut-box span,#shortcut-box .qrcode i{display:none}
+#shortcut-box .qrcode{background-position:45px 0;position:relative;}
+#shortcut-box .qrcode img{width:132px;height:132px;}
+#shortcut-box .qrcode:hover i{display:inline-block;position:absolute;left:-135px;top:0;width:132px;height:132px;border:1px solid #ccc;overflow:hidden;}
+#shortcut-box .gotop{background-position:0 -46px}
+#shortcut-box .gotop:hover{background-position:-45px -46px}
+#shortcut-box a:hover span{text-decoration:none;display:block;background:#7a7a7a;padding:8px 0 0 12px;font-size:12px;color:#fff;width:33px;height:37px;display:block;word-break:break-word}
+
