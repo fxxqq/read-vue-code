@@ -6,4 +6,4 @@
 <a href="http://nav.iterabc.com/?a=message"  target="_blank">提交网站</a><br>
 
 
-#####tips：c本站源码正在整理上传到github中
+#####tips：本站源码正在整理上传到github中
