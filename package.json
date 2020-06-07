@@ -1,0 +1,21 @@
+{
+  "name": "read-vue-code",
+  "version": "1.0.0",
+  "description": "1.[学习源码的好处![](http://cdn.ru23.com/common/link.svg)](/vue-code-analysis/1.Benefits of learning source code.md) 2[学习源码的好处![](http://cdn.ru23.com/common/link.svg)](/vue-code-analysis/1.Benefits of learning source code.md)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd vue-dev&& yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6fedcom/read-vue-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6fedcom/read-vue-code/issues"
+  },
+  "homepage": "https://github.com/6fedcom/read-vue-code#readme"
+}
