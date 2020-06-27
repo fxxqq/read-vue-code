@@ -4,7 +4,8 @@ import { isRegExp, remove } from 'shared/util'
 import { getFirstComponentChild } from 'core/vdom/helpers/index'
 
 type VNodeCache = {
-  [key: string]: ? VNode };
+  [key: string]: ? VNode
+};
 
 function getComponentName(opts: ? VNodeComponentOptions): ? string {
   return opts && (opts.Ctor.options.name || opts.tag)
@@ -83,6 +84,8 @@ export default {
 
   render() {
     const slot = this.$slots.default
+
+    // 找到第一个子组件对象
     const vnode: VNode = getFirstComponentChild(slot)
     const componentOptions: ? VNodeComponentOptions = vnode && vnode.componentOptions
     if (componentOptions) {
