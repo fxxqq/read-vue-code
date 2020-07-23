@@ -10,7 +10,7 @@ export let isUsingMicroTask = false
 const callbacks = []
 let pending = false
 
-function flushCallbacks () {
+function flushCallbacks() {
   pending = false
   const copies = callbacks.slice(0)
   callbacks.length = 0
@@ -43,19 +43,19 @@ if (typeof Promise !== 'undefined' && isNative(Promise)) {
   const p = Promise.resolve()
   timerFunc = () => {
     p.then(flushCallbacks)
-    // In problematic UIWebViews, Promise.then doesn't completely break, but
-    // it can get stuck in a weird state where callbacks are pushed into the
-    // microtask queue but the queue isn't being flushed, until the browser
-    // needs to do some other work, e.g. handle a timer. Therefore we can
-    // "force" the microtask queue to be flushed by adding an empty timer.
+      // In problematic UIWebViews, Promise.then doesn't completely break, but
+      // it can get stuck in a weird state where callbacks are pushed into the
+      // microtask queue but the queue isn't being flushed, until the browser
+      // needs to do some other work, e.g. handle a timer. Therefore we can
+      // "force" the microtask queue to be flushed by adding an empty timer.
     if (isIOS) setTimeout(noop)
   }
   isUsingMicroTask = true
 } else if (!isIE && typeof MutationObserver !== 'undefined' && (
-  isNative(MutationObserver) ||
-  // PhantomJS and iOS 7.x
-  MutationObserver.toString() === '[object MutationObserverConstructor]'
-)) {
+    isNative(MutationObserver) ||
+    // PhantomJS and iOS 7.x
+    MutationObserver.toString() === '[object MutationObserverConstructor]'
+  )) {
   // Use MutationObserver where native Promise is not available,
   // e.g. PhantomJS, iOS7, Android 4.4
   // (#6466 MutationObserver is unreliable in IE11)
@@ -84,7 +84,7 @@ if (typeof Promise !== 'undefined' && isNative(Promise)) {
   }
 }
 
-export function nextTick (cb?: Function, ctx?: Object) {
+export function nextTick(cb ? : Function, ctx ? : Object) {
   let _resolve
   callbacks.push(() => {
     if (cb) {
